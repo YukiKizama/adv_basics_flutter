@@ -30,12 +30,14 @@ class StartScreenContainer extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            OutlinedButton(
-                onPressed: () {},
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: Colors.white,
-                ),
-                child: const Text('Start Quiz')),
+            OutlinedButton.icon(
+              onPressed: () {},
+              style: OutlinedButton.styleFrom(
+                foregroundColor: Colors.white,
+              ),
+              icon: const Icon(Icons.arrow_right_alt),
+              label: const Text('Start Quiz'),
+            ),
             // ElevatedButton(
             //     style: ElevatedButton.styleFrom(backgroundColor: Colors.purple),
             //     onPressed: () {},
