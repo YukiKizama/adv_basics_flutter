@@ -9,7 +9,6 @@ class QuestionsSummary extends StatelessWidget {
     return Column(
       children: summaryData.map((data) {
         return Row(
-<<<<<<< HEAD
           children: [
             Text(((data['question_index'] as int) + 1).toString()),
             Column(
@@ -23,9 +22,6 @@ class QuestionsSummary extends StatelessWidget {
               ],
             )
           ],
-=======
-          children: [Text(((data['question'] as int) + 1).toString())],
->>>>>>> 2c3a7fffb8b612c2a2da71ec7c6b12433a7b6ee2
         );
       }).toList(),
     );
