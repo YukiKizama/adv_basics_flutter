@@ -11,7 +11,8 @@ class QuestionsSummary extends StatelessWidget {
         return Row(
           children: [
             Text(((data['question_index'] as int) + 1).toString()),
-            Column(
+            Expanded(
+                child: Column(
               children: [
                 Text(data['question'] as String),
                 const SizedBox(
@@ -20,7 +21,7 @@ class QuestionsSummary extends StatelessWidget {
                 Text(data['correct_answer'] as String),
                 Text(data['user_answer'] as String),
               ],
-            )
+            ))
           ],
         );
       }).toList(),
