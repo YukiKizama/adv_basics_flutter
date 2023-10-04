@@ -4,7 +4,7 @@ class QuizQuestion {
   final String text;
   final List<String> answers;
 
-  List<String> getShuffledAnswers() {
+  List<String> get shuffledAnswers {
     //Crea ua lista basada en la lista answers.
     final shuffledList = List.of(answers);
     //Barajea la lista shuffledList sin cambiar los datos de la lista original.

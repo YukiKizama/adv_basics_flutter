@@ -2,6 +2,7 @@ import 'package:adv_basics/data/questions.dart';
 import 'package:flutter/material.dart';
 import 'package:adv_basics/answers_button.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:adv_basics/models/quiz_questions.dart';
 
 class QuestionsScreen extends StatefulWidget {
   const QuestionsScreen({super.key, required this.onSelectAnswer});
@@ -42,7 +43,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                   fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
-            ...currentQuestion.answers.map(
+            ...currentQuestion.shuffledAnswers.map(
               (answer) {
                 return AnswerButton(
                   answerText: answer,
